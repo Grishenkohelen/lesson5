@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
+  let printUl = (text,li) => {
+    document.write(`<ul>`);
+    for (let i = 0; i < li; i++) {
+      document.write(`<li>${text}</li>`)
+    }
+    document.write(`</ul>`);
+  }
+  printUl('text', 7);
+</script>
+</body>
+</html>

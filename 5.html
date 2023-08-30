@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <script>
+    //- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    let users = [
+      {
+        id: 1,
+        name: "Olena",
+        age: 27
+      },
+      {
+        id: 2,
+        name: "Oleg",
+        age: 31
+      },
+      {
+        id: 3,
+        name: "Sergey",
+        age: 23
+      }
+    ];
+    let printUsers = (users) => {
+
+      for (let i = 0; i < users.length; i++) {
+        document.write(`
+        <div>
+            <p>${users[i].id}.${users[i].name}-${users[i].age}</p>
+        </div>`)
+      }
+    }
+
+    printUsers(users);
+  </script>
+</body>
+</html>
